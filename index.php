@@ -35,7 +35,7 @@
     public function spesa ($months){
         $spesa_totale = self::$avg_wage  * $this->tot_employees * $months;
       
-        echo "La spesa annua per $this->name: $spesa_totale  \n";
+        echo "La spesa per $months mesi per $this->name: $spesa_totale  \n";
      }
 
      static public function spesa_complessiva(){
