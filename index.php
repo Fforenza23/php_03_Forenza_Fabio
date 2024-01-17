@@ -60,10 +60,10 @@ foreach ($compamy as $company) {
 }
 
 
-$company1 -> spesa(1);//calcola la spesa per 1 mese
-$company2 -> spesa(4);//calcola la spesa per 4 mesi 
-$company3 -> spesa(5);//calcola la spesa per 5 mesi
-$company4 -> spesa(1);//calcola la spesa per 1 mese
-$company5 -> spesa(6);//calcola la spesa per 6 mesi
+$company1 -> spesa((int) readline ("inserisci il numero di mesi: "));//calcola la spesa per 1 mese
+$company2 -> spesa((int) readline ("inserisci il numero di mesi: "));//calcola la spesa per 4 mesi 
+$company3 -> spesa((int) readline ("inserisci il numero di mesi: "));//calcola la spesa per 5 mesi
+$company4 -> spesa((int) readline ("inserisci il numero di mesi: "));//calcola la spesa per 1 mese
+$company5 -> spesa((int) readline ("inserisci il numero di mesi: "));//calcola la spesa per 6 mesi
 
 Company::spesa_complessiva ();
