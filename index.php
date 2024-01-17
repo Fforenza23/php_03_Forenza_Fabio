@@ -10,7 +10,7 @@
     static public $avg_wage = 1500;
     static public $spesa_complessiva = 0;
   
-    public function __construct($_name,$_location,$_tot_employees){
+    public function __construct($_name,$_location,$_tot_employees=0){
     
         $this->name = $_name;
         $this->location = $_location;
@@ -47,7 +47,7 @@
 //Istanziamento degli oggetti
 $company1 = new Company("Aulab", "Italia", 50);
 $company2 = new Company("XYZ Ltd.", "London", 500);
-$company3 = new Company("123 Co.", "Tokyo", 0);
+$company3 = new Company("123 Co.", "Tokyo");
 $company4 = new Company("Global Services", "Mumbai", 800);
 $company5 = new Company("Innovate Solutions", "San Francisco", 1500);
 
