@@ -52,18 +52,13 @@ $company4 = new Company("Global Services", "Mumbai", 800);
 $company5 = new Company("Innovate Solutions", "San Francisco", 1500);
 
 //Invocazione dei metodi
-$company1 -> description();
-$company2 -> description();
-$company3 -> description();
-$company4 -> description();
-$company5 -> description();
+$compamy = [$company1,$company2,$company3,$company4,$company5];
 
+foreach ($compamy as $company) {
+   $company->description();
+   $company->spesa_annua();
+}
 
-$company1 -> spesa_annua();
-$company2 -> spesa_annua();
-$company3 -> spesa_annua();
-$company4 -> spesa_annua();
-$company5 -> spesa_annua();
 
 $company1 -> spesa(1);//calcola la spesa per 1 mese
 $company2 -> spesa(4);//calcola la spesa per 4 mesi 
